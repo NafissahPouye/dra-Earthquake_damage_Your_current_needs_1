@@ -403,9 +403,8 @@ Information on selected important (key) variables
 <ul>
 <li>
 <strong>Categorical key variable(s)</strong>: <em>L1_name</em> |
-<em>L2_name</em> | <em>primary_source_income_household</em> |
-<em>household_size</em> | <em>children_under_5_in_household</em> |
-<em>sleep_tonight?</em>
+<em>L2_name</em> | <em>household_size</em> |
+<em>children_under_5_in_household</em> | <em>sleep_tonight?</em>
 </li>
 <li>
 <strong>Continuous key variable(s)</strong>: <em>not defined</em>
@@ -454,10 +453,10 @@ Number of observations violating
 </h4>
 <ul>
 <li>
-<strong>2-Anonymity:</strong> 288 (original dataset: 288)
+<strong>2-Anonymity:</strong> 211 (original dataset: 211)
 </li>
 <li>
-<strong>3-Anonymity:</strong> 352 (original dataset: 352)
+<strong>3-Anonymity:</strong> 287 (original dataset: 287)
 </li>
 </ul>
 </div>
@@ -467,10 +466,10 @@ Percentage of observations violating
 </h4>
 <ul>
 <li>
-<strong>2-Anonymity:</strong> 73.282% (original dataset: 73.282%)
+<strong>2-Anonymity:</strong> 53.690% (original dataset: 53.690%)
 </li>
 <li>
-<strong>3-Anonymity:</strong> 89.567% (original dataset: 89.567%)
+<strong>3-Anonymity:</strong> 73.028% (original dataset: 73.028%)
 </li>
 </ul>
 </div>
@@ -484,27 +483,26 @@ Expected Percentage of Reidentifications:
 </p>
 <ul>
 <li>
-<strong>modified data</strong>: 84.733% (~ 333.000 observations)
+<strong>modified data</strong>: 69.720% (~ 274.000 observations)
 </li>
 <li>
-<strong>original data</strong>: 84.733% (~ 333.000 observations)
+<strong>original data</strong>: 69.720% (~ 274.000 observations)
 </li>
 </ul>
 <div id="combinations-of-categories-with-highest-risks" class="section level4">
 <h4>
 10 combinations of categories with highest risks
 </h4>
-<table>
+<table style="width:100%;">
 <colgroup>
-<col width="7%" />
-<col width="7%" />
-<col width="19%" />
 <col width="8%" />
-<col width="17%" />
-<col width="32%" />
-<col width="3%" />
-<col width="1%" />
-<col width="1%" />
+<col width="8%" />
+<col width="11%" />
+<col width="22%" />
+<col width="40%" />
+<col width="4%" />
+<col width="2%" />
+<col width="2%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -513,9 +511,6 @@ L1_name
 </th>
 <th align="left">
 L2_name
-</th>
-<th align="left">
-primary_source_income_household
 </th>
 <th align="left">
 household_size
@@ -546,9 +541,6 @@ Mon
 Mawlamyine
 </td>
 <td align="left">
-Daily-wage labour
-</td>
-<td align="left">
 4
 </td>
 <td align="left">
@@ -573,9 +565,6 @@ Shan
 </td>
 <td align="left">
 Tarchilaik
-</td>
-<td align="left">
-Daily-wage labour
 </td>
 <td align="left">
 1
@@ -604,9 +593,6 @@ Tanintharyi
 Dawei
 </td>
 <td align="left">
-Unemployed / no income
-</td>
-<td align="left">
 3
 </td>
 <td align="left">
@@ -627,42 +613,10 @@ My home
 </tr>
 <tr class="even">
 <td align="left">
-Magway
-</td>
-<td align="left">
-Magwe Minbu
-</td>
-<td align="left">
-Private sector / salary work
-</td>
-<td align="left">
-3
-</td>
-<td align="left">
-No
-</td>
-<td align="left">
-My home
-</td>
-<td align="left">
-1.000
-</td>
-<td align="right">
-1
-</td>
-<td align="right">
-1
-</td>
-</tr>
-<tr class="odd">
-<td align="left">
 Yangon
 </td>
 <td align="left">
 Yangon-N
-</td>
-<td align="left">
-Private sector / salary work
 </td>
 <td align="left">
 8
@@ -683,7 +637,7 @@ My home
 1
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">
 Yangon
 </td>
@@ -691,9 +645,6 @@ Yangon
 Yangon-W
 </td>
 <td align="left">
-Unemployed / no income
-</td>
-<td align="left">
 8
 </td>
 <td align="left">
@@ -712,15 +663,12 @@ My home
 1
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">
 Mandalay
 </td>
 <td align="left">
 Mandalay
-</td>
-<td align="left">
-Trade / business
 </td>
 <td align="left">
 12
@@ -741,15 +689,12 @@ Community facility (ex: school / government building)
 1
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">
 Yangon
 </td>
 <td align="left">
 Yangon-E
-</td>
-<td align="left">
-Social benefits
 </td>
 <td align="left">
 3
@@ -770,15 +715,12 @@ Community facility (ex: school / government building)
 1
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">
 Shan
 </td>
 <td align="left">
 Taunggye
-</td>
-<td align="left">
-Social benefits
 </td>
 <td align="left">
 4
@@ -799,7 +741,7 @@ My home
 1
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">
 Bago
 </td>
@@ -807,13 +749,36 @@ Bago
 Pegu
 </td>
 <td align="left">
-Private sector / salary work
-</td>
-<td align="left">
 4
 </td>
 <td align="left">
 No
+</td>
+<td align="left">
+Friend or family’s home
+</td>
+<td align="left">
+1.000
+</td>
+<td align="right">
+1
+</td>
+<td align="right">
+1
+</td>
+</tr>
+<tr class="even">
+<td align="left">
+Sagaing
+</td>
+<td align="left">
+Monywa
+</td>
+<td align="left">
+5
+</td>
+<td align="left">
+Yes
 </td>
 <td align="left">
 Friend or family’s home
@@ -1457,127 +1422,6 @@ Yangon-W
 </tbody>
 </table>
 </div>
-<div id="variable-primary_source_income_household" class="section level4">
-<h4>
-Variable: <em>primary_source_income_household</em>
-</h4>
-<table>
-<thead>
-<tr class="header">
-<th align="left">
-Categories
-</th>
-<th align="right">
-Original data
-</th>
-<th align="right">
-Modified data
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">
-Agriculture
-</td>
-<td align="right">
-62
-</td>
-<td align="right">
-62
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-Daily-wage labour
-</td>
-<td align="right">
-109
-</td>
-<td align="right">
-109
-</td>
-</tr>
-<tr class="odd">
-<td align="left">
-Government work
-</td>
-<td align="right">
-60
-</td>
-<td align="right">
-60
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-Other
-</td>
-<td align="right">
-11
-</td>
-<td align="right">
-11
-</td>
-</tr>
-<tr class="odd">
-<td align="left">
-Private sector / salary work
-</td>
-<td align="right">
-76
-</td>
-<td align="right">
-76
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-Remittances from abroad
-</td>
-<td align="right">
-16
-</td>
-<td align="right">
-16
-</td>
-</tr>
-<tr class="odd">
-<td align="left">
-Social benefits
-</td>
-<td align="right">
-13
-</td>
-<td align="right">
-13
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-Trade / business
-</td>
-<td align="right">
-31
-</td>
-<td align="right">
-31
-</td>
-</tr>
-<tr class="odd">
-<td align="left">
-Unemployed / no income
-</td>
-<td align="right">
-15
-</td>
-<td align="right">
-15
-</td>
-</tr>
-</tbody>
-</table>
-</div>
 <div id="variable-household_size" class="section level4">
 <h4>
 Variable: <em>household_size</em>
@@ -1989,7 +1833,7 @@ for sdcMicro</strong></a>
 </ul>
 <hr />
 <p>
-This report was generated on ven., 04/04/2025 at 00:16:48.
+This report was generated on ven., 04/04/2025 at 00:54:31.
 </p>
 </div>
 <pre><code>&lt;/section&gt;</code></pre>
